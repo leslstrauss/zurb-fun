@@ -1,0 +1,224 @@
+
+
+.test {
+  background-color: #000000;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.rowz {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: rowz;
+  flex-wrap: wrap;
+  height: max;
+}
+
+.colz {
+  flex: 1 1 8%;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5em 10px;
+  box-sizing: border-box;
+  /*margin-bottom: 30px;*/
+}
+
+/* nested grids */
+/*.rowz .rowz, .rowz.nested {
+  flex: 1 1 auto;
+  margin-top: -0.0em;
+}*/
+
+/* full width grids */
+.rowz.wide-fit {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* center grids */
+.rowz.center {
+  justify-content: center;
+}
+
+.center .colz {
+  flex-growz: 0;
+  flex-shrink: 0;
+}
+
+/* colzumns widths */
+
+.colz-span-1 {
+  flex-basis: 8.3333%;
+}
+
+.colz-span-2 {
+  flex-basis: 16.6666%;
+}
+
+.colz-span-3 {
+  flex-basis: 25%;
+}
+
+.colz-span-4 {
+  flex-basis: 33.3333%;
+}
+
+.colz-span-5 {
+  flex-basis: 41.6666%;
+}
+
+.colz-span-6 {
+  flex-basis: 50%;
+}
+
+.colz-span-7 {
+  flex-basis: 58.3333%;
+}
+
+.colz-span-8 {
+  flex-basis: 66.6666%;
+}
+
+.colz-span-9 {
+  flex-basis: 75%;
+}
+
+.colz-span-10 {
+  flex-basis: 83.3333%;
+}
+
+.colz-span-11 {
+  flex-basis: 91.6666%;
+}
+
+.colz-span-12 {
+  flex-basis: 100%;
+}
+
+/* examples */
+
+.fixed-width {
+  flex: 0 0 500px;
+  background-color: rgba(255,0,0,0.1) !important;
+}
+
+@media all and (max-width: 568px) {
+  .colz-span-1,
+  .colz-span-2,
+  .colz-span-3,
+  .colz-span-4,
+  .colz-span-5 {
+    flex-basis: 50%;
+  }
+
+  .colz-span-6,
+  .colz-span-7,
+  .colz-span-8,
+  .colz-span-9,
+  .colz-span-10,
+  .colz-span-11 {
+    flex-basis: 100%;
+  }
+
+  .nested .colz {
+    flex-basis: 100%;
+  }
+}
+
+/* eye candy */
+
+body {
+  font-family: sans-serif;
+}
+
+.rowz {
+/*  background-color: #cccccc;*/
+  background-color: #cccccc;
+}
+.colz {
+/*  background-color: #999999;*/
+  background-color: #FFFFFF;
+  background-clip: content-box;
+  border: 0.5em solid #FFFFFF;
+}
+
+/*------------------------------------------------------------*/
+
+.flexwrapper {
+  margin-left: 0em;
+}
+
+.flexwrapper > section {
+  float: left;
+  width: 25%;
+  border-left: 0.5em solid #eff5f5;
+  border-right: 0.5em solid #eff5f5;
+  box-sizing: border-box;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  padding-top: 25%;
+}
+
+.flexwrapper > section:nth-child(1) { background: #014D5F; }
+.flexwrapper > section:nth-child(2) { background: #037D9A; }
+.flexwrapper > section:nth-child(3) { background: #037D9A; }
+.flexwrapper > section:nth-child(4) { background: #014D5F; }
+
+/*#3E606F*/
+/* Decorative bits and bobs */
+
+body {
+  font: 1.125em/1.4 'Source Sans Pro', sans-serif;
+  background: #eff5f5;
+  color: #31656e;
+  text-align: center;
+  padding: 4em 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1em;
+  color: #597a80;
+  text-transform: uppercase;
+  margin: .5em 0 4em;
+  letter-spacing: .25em;
+}
+
+/*.flexwrapper {
+  margin-left: 0em;
+}
+
+.flexwrapper > section {
+  float: left;
+  width: 25%;
+  border-left: 0em solid #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 0em;
+  padding-top: 25%;
+}
+
+.flexwrapper > section:nth-child(1) {
+  background: #a9cc5b;
+}
+
+.flexwrapper > section:nth-child(2) {
+  background: #39b4e0;
+}
+
+.flexwrapper > section:nth-child(3) {
+  background: #e4582b;
+}
+
+.flexwrapper > section:nth-child(4) {
+  background: #f8c624;
+}*/
